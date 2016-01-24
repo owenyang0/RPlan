@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		165DD9921C54D7830001E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DD9911C54D7830001E887 /* AppDelegate.swift */; };
-		165DD9941C54D7830001E887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DD9931C54D7830001E887 /* ViewController.swift */; };
 		165DD9971C54D7830001E887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DD9951C54D7830001E887 /* Main.storyboard */; };
 		165DD9991C54D7830001E887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165DD9981C54D7830001E887 /* Assets.xcassets */; };
 		165DD99C1C54D7830001E887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165DD99A1C54D7830001E887 /* LaunchScreen.storyboard */; };
+		165DD9AA1C550A820001E887 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DD9A91C550A820001E887 /* Plan.swift */; };
+		165DD9B51C550F240001E887 /* PlanlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DD9B41C550F240001E887 /* PlanlistTableViewController.swift */; };
+		165DD9B71C5513370001E887 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165DD9B61C5513370001E887 /* PlanTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		165DD98E1C54D7830001E887 /* ReadingPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DD9911C54D7830001E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		165DD9931C54D7830001E887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		165DD9961C54D7830001E887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		165DD9981C54D7830001E887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165DD99B1C54D7830001E887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165DD99D1C54D7830001E887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165DD9A91C550A820001E887 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		165DD9B41C550F240001E887 /* PlanlistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanlistTableViewController.swift; sourceTree = "<group>"; };
+		165DD9B61C5513370001E887 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		165DD9901C54D7830001E887 /* ReadingPlan */ = {
 			isa = PBXGroup;
 			children = (
+				165DD9AB1C550B480001E887 /* controllers */,
+				165DD9A81C550A6B0001E887 /* model */,
 				165DD9911C54D7830001E887 /* AppDelegate.swift */,
-				165DD9931C54D7830001E887 /* ViewController.swift */,
 				165DD9951C54D7830001E887 /* Main.storyboard */,
 				165DD9981C54D7830001E887 /* Assets.xcassets */,
 				165DD99A1C54D7830001E887 /* LaunchScreen.storyboard */,
 				165DD99D1C54D7830001E887 /* Info.plist */,
+				165DD9B61C5513370001E887 /* PlanTableViewCell.swift */,
 			);
 			path = ReadingPlan;
+			sourceTree = "<group>";
+		};
+		165DD9A81C550A6B0001E887 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				165DD9A91C550A820001E887 /* Plan.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		165DD9AB1C550B480001E887 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				165DD9B41C550F240001E887 /* PlanlistTableViewController.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				165DD9941C54D7830001E887 /* ViewController.swift in Sources */,
+				165DD9B71C5513370001E887 /* PlanTableViewCell.swift in Sources */,
 				165DD9921C54D7830001E887 /* AppDelegate.swift in Sources */,
+				165DD9AA1C550A820001E887 /* Plan.swift in Sources */,
+				165DD9B51C550F240001E887 /* PlanlistTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				165DD9A21C54D7830001E887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
